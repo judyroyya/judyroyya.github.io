@@ -1,0 +1,126 @@
+    <div style="color:red; text-align: center;"  class="book"> 
+      <!--將以下字型統一-->
+        <p>Ya!We are best!</p>
+
+        <h1 style="color: blue; font-family: 'ANUDRG';">banana</h1>
+        <p style= "font-family:DFKai-sb">好吃喔abc!</p>
+      
+        <article>你說呢?</article>
+    </div>
+<style>
+    @font-face {
+        font-family: 'ANUDI' ;
+        src: url('字型/ANUDI.ttf');
+    }
+    @font-face {
+        font-family: 'ANUDRG' ;
+        src: url('字型/ANUDRG.ttf');
+    }
+
+
+    .book{
+        text-align:center;
+         font-size: 40pt;
+          font-family:'ANUDI';
+           color: blueviolet;
+
+    }
+</style>
+<!--表格設計-->
+<hr>
+<p style= "font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:seagreen; text-align: center; font-size: 40pt;">Table</p>
+<table class='table1' align="center" >
+    <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>32</td>
+        <td>33</td>
+    </tr>
+</table>
+
+<style>
+.table1 tr{
+    font-size: 28pt;
+}
+.table1 tr:nth-child(odd){
+    background-color: indianred;
+}
+.table1 tr:nth-child(even){
+    background-color: lightgreen;
+}
+.table1 tr:first-child{
+    background-color: royalblue;
+
+}
+.table1,.table1 tr,.table1 td{
+    border: 2px solid black;
+    text-align:center;
+    padding: 10px;
+    border-collapse:separate;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+</style>
+
+<!--圖文並列-->
+<hr>
+<div>這是Google<img style='vertical-align:middle;
+    'src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">你知道的</div>
+<button style="color:snow;background-color: brown;"onclick="benbenben();">google666</button>
+<script>
+function benbenben(){
+    alert('即將去找google');
+    window.open('https://www.google.com/'); //開新視窗
+    //location.href ='https://www.google.com/'; 原視窗
+}
+</script>
+
+<div style="color:greenyellow; text-align:left ;">
+<h1 style="font-family: 'ANUDRG';">下一位~</h1>
+</div>
+
+<div>這是Facebook<img style='vertical-align:bottom;
+    'src="https://www.facebook.com/images/fb_icon_325x325.png" width="100" height="100">你知道的</div>
+<div>
+<button style="color:aquamarine;background-color:indigo;"onclick="haha();">看臉囉!</button>
+<script>
+function haha(){
+    alert('走!看臉去~');
+    //window.open('https://www.facebook.com/'); //開新視窗
+    location.href ='https://www.facebook.com/'; 原視窗
+}
+</script>
+
+<hr>
+<div style="color:hotpink; text-align:left ;">
+    <h1 style="font-family: 'ANUDRG';">看影片專區:</h1>
+    </div>
+
+<button style="color:magenta;background-color:midnightblue;"onclick="hehe();">聽歌啦!</button>
+<script>
+function hehe(){
+    alert('確定前往休息?');
+    window.open('https://www.youtube.com/?gl=TW&tab=w1'); //開新視窗
+    //location.href ='https://www.youtube.com/?gl=TW&tab=w1'; 原視窗
+}
+</script>
+<button style="color:orange;background-color:seagreen;"onclick="yaya();">追劇啦!</button>
+<script>
+function yaya(){
+    alert('確定前往休息?');
+    //window.open('https://tw.iqiyi.com/?vfm=f_718_nwg-&cha=home'); //開新視窗
+    location.href ='https://tw.iqiyi.com/?vfm=f_718_nwg-&cha=home'; 原視窗
+}</script>
+
+<input type="image"
+src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="alert" onclick="alert('google');"/>
