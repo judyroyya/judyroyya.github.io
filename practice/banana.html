@@ -1,8 +1,7 @@
-<html lang="zh"><head>
-    <meta charset="utf-8">
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="src/head.js"></script>    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--<script src="src/head.js"></script>-->    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+    <link rel="stylesheet" href="banana_files/bootstrap.min.css">
     <style>
         .bd-placeholder-img {
           font-size: 1.125rem;
@@ -23,6 +22,16 @@
         }
         .jumbotron {
            margin-bottom: 0px;
+           background-image:  url('images/new.jpg');
+           background-position-y: -210px;
+           background-position-x: center;
+           background-repeat: no-repeat;
+           background-size:cover;
+        }
+        .card-img-top{
+          height: 225px;   
+          line-height: 225px; 
+          text-align: center;
         }
     </style>
 
@@ -35,7 +44,7 @@
     <header> 
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
-        <a style ="color: yellow " class="navbar-brand d-flex align-items-center">
+        <a style="color: yellow " class="navbar-brand d-flex align-items-center">
             <strong>banana</strong>
         </a>
         <div class="nav_link">
@@ -49,8 +58,13 @@
 <main role="main">
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 style ="color:blueviolet; font-family:initial">BANANA SAY HELLO!</h1>
-      <p style ="font-family:'Times New Roman', Times, serif;" class="lead text-muted">歡迎來到我的個人專頁，這裡存放著我的資訊與生活，讓我們繼續看下去吧!</p>
+      <br>
+      <h1 style="color:red; font-family:initial;">BANANA SAY HELLO!</h1>
+      <br>
+      <br>
+    
+      <span style=" font-family:DFKai-sb; color:violet !important;background-color:honeydew;margin-right:5px;" class="lead text-muted">歡迎來到我的個人專頁</p>
+      <span style=" font-family:DFKai-sb; color:mediumorchid !important;background-color:honeydew;margin-right:5px;" class="lead text-muted">這裡存放著我的資訊與生活，讓我們繼續看下去吧!</p>
       <p>
         <a href="https://www.facebook.com/profile.php?id=100001671646126" class="btn btn-primary my-2">觀看更多我的生活</a>
         <!--<a href="#" class="btn btn-secondary my-2"></a>-->
@@ -62,12 +76,13 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" >banana真實身分</text></svg>
+            <div class="bd-placeholder-img card-img-top" style="background-color: navy; color: white;">banana真實身分</div>
+            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" >banana真實身分</text></svg>-->
             <div class="card-body">
-              <p style ="color:magenta; font-family:DFKai-sb" class="card-text">羅思婷，台灣台中人，1998年生，目前就讀勤益科技大學電機工程系，性格溫和又固執，喜歡享受一個人時光。</p>
+              <p style="color:magenta; font-family:DFKai-sb" class="card-text">羅思婷，台灣台中人，1998年生，目前就讀勤益科技大學電機工程系，性格溫和又固執，喜歡享受一個人時光。</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button onclick="he();"type="button" class="btn btn-sm btn-outline-secondary">more...</button>
+                  <button onclick="he();" type="button" class="btn btn-sm btn-outline-secondary">more...</button>
                   <script>
                   function he(){
                       location.href ='https://judyroyya.github.io/practice/banana1998.html'; 原視窗
@@ -80,12 +95,13 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">banana會什麼?</text></svg>
+            <div class="bd-placeholder-img card-img-top" style="background-color:darkred; color:fuchsia;">banana會什麼?</div>
+            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">banana會什麼?</text></svg>-->
             <div class="card-body">
-              <p style ="color:mediumturquoise; font-family:DFKai-sb" class="card-text">各種音階直笛，但最擅長低音笛、薩克斯風、吉他、汽車基礎保養、程式、solidwork、3D列印....</p>
+              <p style="color:mediumturquoise; font-family:DFKai-sb" class="card-text">各種音階直笛，但最擅長低音笛、薩克斯風、吉他、汽車基礎保養、程式、solidwork、3D列印....</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button  onclick="benbenben();" type="button" class="btn btn-sm btn-outline-secondary">more...</button>
+                  <button onclick="benbenben();" type="button" class="btn btn-sm btn-outline-secondary">more...</button>
                   <script>
                   function benbenben(){
                       location.href ='https://judyroyya.github.io/practice/banana3D.html'; 原視窗
@@ -98,12 +114,13 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">banana去哪裡玩過?</text></svg>
+            <div class="bd-placeholder-img card-img-top" style="background-color:gold; color:indigo;">banana去哪裡玩過?</div>
+            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">banana去哪裡玩過?</text></svg>-->
             <div class="card-body">
-              <p style ="color:sienna; font-family:DFKai-sb" class="card-text">基本上台灣地區所有縣市都去玩過了，最喜愛、最想再去的地方是蘭嶼。也曾自己一個人搭乘交通工具以及自行開車前往台中或以外的縣市...</p>
+              <p style="color:sienna; font-family:DFKai-sb" class="card-text">基本上台灣地區所有縣市都去玩過了，最喜愛、最想再去的地方是蘭嶼。也曾自己一個人搭乘交通工具以及自行開車前往台中或以外的縣市...</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button onclick="jk();"type="button" class="btn btn-sm btn-outline-secondary">more...</button>
+                  <button onclick="jk();" type="button" class="btn btn-sm btn-outline-secondary">more...</button>
                   <script>
                   function jk(){
                       location.href ='https://judyroyya.github.io/practice/bananatravel.html'; 原視窗
@@ -123,10 +140,10 @@
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-      <a href="#">Back to top</a>
+      <a href="file:///C:/Users/%E7%BE%85%E6%80%9D%E5%A9%B7/Documents/GitHub/judyroyya.github.io/practice/banana.html#">Back to top</a>
     </p>
     <!--版權-->
-    <p style="text-align:center;">copyright © 2020</p>
+    <p style="text-align:center;">copyright © 2020 羅思婷</p>
   </div>
 </footer>
 
