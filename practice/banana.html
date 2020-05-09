@@ -13,7 +13,7 @@
           user-select: none;
         }
   
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
           .bd-placeholder-img-lg {
             font-size: 3.5rem;
           }
@@ -30,7 +30,7 @@
            background-size:cover;
         }
         .card-img-top{
-          height: 225px;   
+          max-height: 225px;   
           line-height: 225px; 
           text-align: center;
         }
@@ -40,9 +40,9 @@
     <!--網站title-->
     <title>banana個人網站</title> 
   </head>
-  
+  <!--<div style="width:90%;">-->
   <body>
-    <header> 
+    <header>
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
         <a style="color: yellow " class="navbar-brand d-flex align-items-center">
@@ -55,7 +55,7 @@
         </div>
     </div>
     </header>
-
+  </div>
 <main role="main">
   <section class="jumbotron text-center">
     <div class="container">
@@ -64,7 +64,7 @@
       <br>
       <br>
     
-      <span style=" font-family:DFKai-sb; color:violet !important;background-color:honeydew;margin-right:5px;" class="lead text-muted">歡迎來到我的個人專頁</p>
+      <span style=" font-family:DFKai-sb; color:violet !important;background-color:honeydew;margin-right:5px; max-width: 90%;" class="lead text-muted">歡迎來到我的個人專頁</p>
       <span style=" font-family:DFKai-sb; color:mediumorchid !important;background-color:honeydew;margin-right:5px;" class="lead text-muted">這裡存放著我的資訊與生活，讓我們繼續看下去吧!</p>
       <p>
         <a href="https://www.facebook.com/profile.php?id=100001671646126" class="btn btn-primary my-2">觀看更多我的生活</a>
