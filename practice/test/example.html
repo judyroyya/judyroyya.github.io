@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>範例</title>
+    <!--加入函式庫(請放於head內)-->
+    <script src="src/jquery.js"></script>
+    <script src="src/jquery-ui.js"></script>
+    <link rel="stylesheet" href="src/jquery-ui.css">
+    <link rel="stylesheet" href="src/jquery-ui.theme.css">
+</head>
+<body>
+    <div style="text-align: center;">
+      <h1 id="gg" style="display:inline-block;">jQuery範例</h1>
+     </div>
+     <!--對話框-->
+    <h1 id="qq" style="display: inline-block;"> dialog</h1>
+    <br>
+    <button id="google">大神在此</button>
+    <script>
+    var y=["#gg","#qq"];
+    var x=1;
+      //js寫於此
+      $( "#google" ).mouseup(function(){
+          alert(x+'次');
+          x++;
+      });
+      $("#google").mousedown(function(){
+      $("#gg").show();
+  });
+    $("#google").mouseup(function(){
+      $("#gg").hide();
+  });
+      $(y[0]).mouseover(function(){
+      $(y[0]).css("background-color","yellow");
+  });
+      $(y[0]).mouseleave(function(){
+      $(y[0]).css("background-color","transparent");
+  });
+      $(y[1]).mouseover(function(){
+      $(this).css("background-color","pink");
+  });
+      $(y[1]).mouseleave(function(){
+      $(this).css("background-color","transparent");
+  });
+
+  </script>   
+    <button id="btn1">按下開啟對話框</button>
+    <div id="dialog1" title="對話框">
+        <p>對話框測試</p>
+    </div>
+    <script>
+        //js寫於此
+        $("#dialog1").hide();
+        $( "#btn1" ).click(function(){
+            $("#dialog1").dialog();
+        });
+    </script>
+
+    <!--分頁-->
+    <h1>tabs</h1>
+    <div id="tabs" style="max-width: 50%;">
+        <ul>
+          <li><a href="#tabs-1">NCUT</a></li>
+          <li><a href="#tabs-2">Google</a></li>
+          <li><a href="#tabs-3">YT</a></li>
+        </ul>
+        <div id="tabs-1">
+          <a href="https://www.ncut.edu.tw">Click me</a>
+        </div>
+        <div id="tabs-2">
+          <p>Google 大神</p>
+        </div>
+        <div id="tabs-3">
+          <p>Youtube</p>
+        </div>
+      </div>
+      <script>
+        //js寫於此
+        $( "#tabs" ).tabs();
+        /*
+        $( function() {
+            $("#tabs").tabs();
+        });
+        */
+      </script>
+
+      <!--摺頁-->
+      <h1>accordion</h1>
+      <div id="accordion" style="max-width: 50%;">
+        <h3>第一段</h3>
+        <div>
+            <p>我是第一段</p>
+        </div>
+        <h3>第二段</h3>
+        <div>
+            <p>我是第二段</p>
+        </div>
+        <h3>第三段</h3>
+        <div>
+            <p>我是第三段</p>
+        </div>
+     </div>
+     <script>
+         //js寫於此
+         $( "#accordion" ).accordion();
+         /*$( function() {
+            $( "#accordion" ).accordion();
+         });*/
+     </script>
+</body>
+</html>
