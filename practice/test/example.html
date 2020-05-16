@@ -15,7 +15,7 @@
     <div style="text-align: center;">
       <h1 id="gg" style="display:inline-block;">jQuery範例</h1>
      </div>
-     <!--對話框-->
+     
     <h1 id="qq" style="display: inline-block;"> dialog</h1>
     <br>
     <button id="google">大神在此</button>
@@ -24,7 +24,8 @@
     var x=1;
       //js寫於此
       $( "#google" ).mouseup(function(){
-          alert(x+'次');
+          //alert(x+'次');
+          alert(Math.floor(Math.random() * 11));
           x++;
       });
       $("#google").mousedown(function(){
@@ -46,7 +47,8 @@
       $(this).css("background-color","transparent");
   });
 
-  </script>   
+  </script> 
+   <!--對話框--> 
     <button id="btn1">按下開啟對話框</button>
     <div id="dialog1" title="對話框">
         <p>對話框測試</p>
